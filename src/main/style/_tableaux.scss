@@ -1,0 +1,130 @@
+@mixin cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tableaux-container{
+  margin-top: 3em;
+  width: 100%;
+  height: calc(100vh - 3em); 
+  @include cent();
+  overflow:hidden;
+  .tableaux-grid{
+      width: 100%;
+      height: 100%;
+      width: 80em;
+      display: grid;
+      grid-template-columns:repeat(3 , 1fr);
+      grid-template-rows:auto;
+      grid-column-gap: 1em;
+      overflow-y: scroll;
+      margin-top:10em ;
+         &::-webkit-scrollbar {
+     width: 5px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: var(--colorx) ; 
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: rgba($color: #F2D6BD, $alpha: .2);
+
+        &:hover {
+         background: var(--color0); 
+        }
+    }
+      .tableaux-rows{
+        min-height: 100%;
+        height: auto;
+        .tableaux-container{
+          width:95%;
+          padding: 1em;
+          margin: auto;
+          margin-top: 2em;
+          box-shadow:var(--shadow );
+          &:hover{
+            transform: scale(1.05);
+          }
+            h3{
+                font-size: 1em;
+                font-weight: 100;
+              }
+              img{
+                border: .2em var(--colorXX) solid;
+              }
+              p{
+                font-size: .7em;
+                border: .01em var(--color0) solid;
+                padding: 1em;
+                text-align: center;
+  
+            }
+  
+        }
+      }
+  }
+  .tableaux-presentation-container{
+      position: absolute;
+      @include cent();
+      flex-wrap: wrap;
+      width: 90%;
+      height: 98%;
+      background-color: rgba($color: #000, $alpha: .9);
+      z-index: 10;
+
+      // overflow-y: scroll;ks
+    
+      .the-tableaux{
+        width: 100%;
+        height: 100%;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        @include cent();
+        flex-wrap:wrap;
+        overflow-y:scroll ;
+          &::-webkit-scrollbar {
+      width: 5px;
+      }
+      /* Track */
+      &::-webkit-scrollbar-track {
+          background: var(--colorx) ; 
+      }
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: rgba($color: #F2D6BD, $alpha: .2);
+        &:hover {
+         background: var(--color0); 
+        }
+      }
+        h2{
+          width: 100%;
+          text-align: center;
+        }
+        img{
+          height: calc(100vh / 1.2);
+          border: .2em var(--color0) solid;
+        }
+        .the-tableaux-description{
+          margin-top: 1em;
+          @include cent(); 
+          p{
+            border: .05em var(--color0) solid;
+            font-size: .7em;
+            padding: 1em;
+            width: 50%;
+          }
+        }
+      }
+      .close-the-tableaux{
+        position: absolute;
+        width: 1.5em;
+        height: 1.5em;
+        top: .5em;
+        left: .5em;
+        background-image: url("../Images/close-icon.svg");
+        background-size: 100%;
+        background-position: center;
+      }
+  }
+}

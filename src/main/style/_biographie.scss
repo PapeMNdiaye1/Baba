@@ -1,0 +1,48 @@
+#biographie-container{
+    margin-top: 3em;
+    width: 100%;
+    height: calc(100vh - 3em); 
+    overflow-y: scroll; 
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:repeat(3 , auto);
+    grid-row-gap: 3em;
+    &::-webkit-scrollbar {
+     width: 5px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: var(--colorx) ; 
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: rgba($color: #F2D6BD, $alpha: .2);
+
+        &:hover {
+         background: var(--color0); 
+        }
+    }
+
+    .carte-container{
+        width: 100%;
+        border-top: .01em var(--color0) solid;
+        margin-top: 2em;
+        padding-bottom: 5em;
+        .carte{
+            // min-height: 40em;
+            margin: auto;
+            width: 40em;
+            // background-color: aqua;
+            h1{
+        font-weight: 100;
+        padding: .5em;
+
+        }
+        section{
+            border: .01em var(--color0) solid;
+            padding: 2em;
+           font-size: .8em;
+        }
+    }
+    }
+}
