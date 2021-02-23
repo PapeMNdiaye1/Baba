@@ -331,6 +331,7 @@ body {
   height: 98%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 10;
+  display: none;
 }
 
 #tableaux-container .tableaux-presentation-container .the-tableaux {
@@ -391,6 +392,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 #tableaux-container .tableaux-presentation-container .the-tableaux .the-tableaux-description p {
@@ -409,5 +412,6 @@ body {
   background-image: url("../Images/close-icon.svg");
   background-size: 100%;
   background-position: center;
+  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */
