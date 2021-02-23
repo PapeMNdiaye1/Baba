@@ -72,9 +72,7 @@
       height: 98%;
       background-color: rgba($color: #000, $alpha: .9);
       z-index: 10;
-
-      // overflow-y: scroll;ks
-    
+      display: none;
       .the-tableaux{
         width: 100%;
         height: 100%;
@@ -83,20 +81,20 @@
         @include cent();
         flex-wrap:wrap;
         overflow-y:scroll ;
-          &::-webkit-scrollbar {
+        &::-webkit-scrollbar {
       width: 5px;
-      }
-      /* Track */
-      &::-webkit-scrollbar-track {
+        }
+        /* Track */
+        &::-webkit-scrollbar-track {
           background: var(--colorx) ; 
-      }
-      /* Handle */
-      &::-webkit-scrollbar-thumb {
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
         background: rgba($color: #F2D6BD, $alpha: .2);
         &:hover {
          background: var(--color0); 
         }
-      }
+        }
         h2{
           width: 100%;
           text-align: center;
@@ -107,8 +105,12 @@
         }
         .the-tableaux-description{
           margin-top: 1em;
-          @include cent(); 
+          @include cent();
+          width: 100%;
+          height: auto;
+          // background-color: #F2D6BD; 
           p{
+            // background: salmon;
             border: .05em var(--color0) solid;
             font-size: .7em;
             padding: 1em;
@@ -125,6 +127,7 @@
         background-image: url("../Images/close-icon.svg");
         background-size: 100%;
         background-position: center;
+        z-index: 10;
       }
   }
 }

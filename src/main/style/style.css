@@ -16,12 +16,12 @@
 
 body {
   --colorX: #262626;
-  --colorXX: #1A1A1A;
-  --color0: #F2D6BD;
-  --shadow:  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --colorXX: #1a1a1a;
+  --color0: #f2d6bd;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background: var(--colorX);
   color: var(--color0);
-  font-family: 'moderna';
+  font-family: "moderna";
 }
 
 .navigation {
@@ -60,7 +60,7 @@ body {
 .navigation ul li {
   list-style-type: none;
   width: auto;
-  margin: 0em .5em 0em .5em;
+  margin: 0em 0.5em 0em 0.5em;
 }
 
 .navigation ul li:hover {
@@ -94,7 +94,7 @@ body {
   min-height: 50em;
   background: url("../Images/acceuil-bacground.svg");
   background-size: 215%;
-  background-position: 100% 140%;
+  background-position: -70em -34em;
   background-repeat: no-repeat;
 }
 
@@ -331,6 +331,7 @@ body {
   height: 98%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 10;
+  display: none;
 }
 
 #tableaux-container .tableaux-presentation-container .the-tableaux {
@@ -391,6 +392,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 #tableaux-container .tableaux-presentation-container .the-tableaux .the-tableaux-description p {
@@ -409,5 +412,6 @@ body {
   background-image: url("../Images/close-icon.svg");
   background-size: 100%;
   background-position: center;
+  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */
