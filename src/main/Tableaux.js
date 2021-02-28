@@ -104,8 +104,7 @@ class Tableaux extends Component {
             <Fragment>
                 <div id="tableaux-container">
                     <div className="tableaux-presentation-container">
-                        <div className="close-the-tableaux"
-                            onClick={this.handelClose}
+                        <div className="close-the-tableaux" onClick={this.handelClose}
                         >
                         </div>
                         <div className="the-tableaux">
@@ -129,7 +128,6 @@ class Tableaux extends Component {
                             {this.state.AllTableauxInRow3}
                         </div>
                     </div>
-
                 </div>
             </Fragment>
         )

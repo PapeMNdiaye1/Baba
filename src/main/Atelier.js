@@ -4,7 +4,17 @@ class Atelier extends Component {
     render() {
         return (
             <Fragment>
-                Atelier
+                <div id="atelier">
+                    <div className="traveaux">
+
+                    </div>
+                    <div className="traveaux">
+
+                    </div>
+                    <div className="traveaux">
+
+                    </div>
+                </div>
             </Fragment>
         )
     }
