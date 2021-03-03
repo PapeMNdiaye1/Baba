@@ -1,6 +1,6 @@
 @font-face {
-  src: url(./moderna/MODERNA_.TTF);
-  font-family: moderna;
+  src: url(./RocknRoll_One/RocknRollOne-Regular.ttf);
+  font-family: RocknRollOne;
 }
 
 *,
@@ -21,7 +21,7 @@ body {
   --shadow:  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   background: var(--colorX);
   color: var(--color0);
-  font-family: 'moderna';
+  font-family: 'RocknRollOne';
 }
 
 .navigation {
@@ -258,7 +258,7 @@ body {
       grid-template-rows: auto;
   grid-column-gap: 1em;
   overflow-y: scroll;
-  margin-top: 10em;
+  padding-top: 4em;
   /* Track */
   /* Handle */
 }
@@ -301,6 +301,7 @@ body {
 #tableaux-container .tableaux-grid .tableaux-rows .tableaux-container h3 {
   font-size: 1em;
   font-weight: 100;
+  text-align: center;
 }
 
 #tableaux-container .tableaux-grid .tableaux-rows .tableaux-container img {
@@ -404,6 +405,7 @@ body {
 }
 
 #tableaux-container .tableaux-presentation-container .close-the-tableaux {
+  cursor: pointer;
   position: absolute;
   width: 1.5em;
   height: 1.5em;
@@ -413,6 +415,16 @@ body {
   background-size: 100%;
   background-position: center;
   z-index: 10;
+}
+
+#tableaux-container .tableaux-presentation-container .close-the-tableaux:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#tableaux-container .tableaux-presentation-container .close-the-tableaux:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #atelier {
@@ -433,13 +445,78 @@ body {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  overflow: hidden;
+  overflow-y: scroll;
+  /* Track */
+  /* Handle */
 }
 
-#atelier .traveaux {
+#atelier::-webkit-scrollbar {
+  width: 5px;
+}
+
+#atelier::-webkit-scrollbar-track {
+  background: var(--colorx);
+}
+
+#atelier::-webkit-scrollbar-thumb {
+  background: rgba(242, 214, 189, 0.2);
+}
+
+#atelier::-webkit-scrollbar-thumb:hover {
+  background: var(--color0);
+}
+
+#atelier .works {
   width: 100%;
   height: 14em;
   margin-top: 2em;
-  background: salmon;
+  padding-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#atelier .works .works-poster {
+  width: 20em;
+  height: 100%;
+  background: seagreen;
+  background-image: url("../Images/1590098684498-2042443623[21808].jpg");
+  background-size: 100%;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#atelier .works .works-poster h1 {
+  background: var(--colorX);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#atelier .works .works-description {
+  width: calc(100%-60em);
+  height: 100%;
+  background: sandybrown;
 }
 /*# sourceMappingURL=style.css.map */

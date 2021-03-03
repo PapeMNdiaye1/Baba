@@ -11,11 +11,45 @@
   @include cent();
   align-items: flex-start;
   flex-wrap: wrap;
-  overflow:hidden;
-  .traveaux{
+  overflow-y:scroll;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: var(--colorx) ; 
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: rgba($color: #F2D6BD, $alpha: .2);
+        &:hover {
+         background: var(--color0); 
+        }
+    }
+  .works{
       width: 100%;
       height: 14em;
       margin-top: 2em;
-      background: salmon;
-  }
+      padding-left: 5%;
+      @include cent();
+      .works-poster{
+        width: 20em;
+        height: 100%;
+        background: seagreen;
+        background-image: url('../Images/1590098684498-2042443623[21808].jpg');
+        background-size: 100%;
+        background-position: center;
+        @include cent();
+        h1{
+          background:var(--colorX);
+          width: 100%;
+          @include cent()
+        }
+      }
+      .works-description{
+        width: calc(100%-60em);
+        height: 100%;
+        background: sandybrown;
+      }
+    }
 }

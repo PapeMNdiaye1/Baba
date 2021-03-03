@@ -5,14 +5,27 @@ class Atelier extends Component {
         return (
             <Fragment>
                 <div id="atelier">
-                    <div className="traveaux">
-
+                    <div className="works">
+                        <div className="works-poster">
+                            <h1>
+                                works-poster
+                            </h1>
+                        </div>
+                        <p className="works-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Enim labore odio vero animi, commodi neque eum atque
+                            nisi iure a assumenda quis dolore molestias maxime possimus
+                            impedit, consequuntur, sequi vitae.
+                        </p>
                     </div>
-                    <div className="traveaux">
-
+                    <div className="works">
                     </div>
-                    <div className="traveaux">
-
+                    <div className="works">
+                    </div>
+                    <h2>Contact</h2>
+                    <br />
+                    <div >
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus neque natus culpa enim totam ipsa ad magnam laudantium magni esse fugit, quibusdam necessitatibus incidunt saepe, officia dolorem aliquam nemo doloremque!
                     </div>
                 </div>
             </Fragment>

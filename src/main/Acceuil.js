@@ -12,13 +12,7 @@ class Acceuil extends Component {
                     <div className="text-in-acceuil-background">
                     </div>
                     <p className="text-in-acceuil">
-                        Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Molestias voluptates assumenda
-                        nostrum voluptas sapiente.
-                        Sequi at facere sapiente.
-                        Deleniti totam optio velit dolor sunt deserunt,
-                        provident similique aperiam numquam placeat.
+                        Artiste plasticien en atelier de peinture depuis quatre années. Mon intérêt plastique est ce qui nous est proche, notre environnement, notre cadre et nos relations. J'ai un baccalauréat en 2003, et depuis je poursuis ma recherche artistique dans différents domaines aussi variés que l'art figuratif et l'art abstrait.
                     </p>
                     <div className="social-networks-container">
                         <div className="social-networks">
