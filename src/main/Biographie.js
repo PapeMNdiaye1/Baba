@@ -9,7 +9,7 @@ class Biographie extends Component {
                     <div className="carte-container">
                         <div className="carte">
                             <h1>
-                                Biographi
+                                Biographie
                             </h1>
                             <section>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta

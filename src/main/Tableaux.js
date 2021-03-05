@@ -4,19 +4,20 @@ import image0 from "./Images/1590098684498-2042443623[21808].jpg"
 import image1 from "./Images/eE4cYLEA.jpeg"
 import image2 from "./Images/IMG_20180214_105003_edit.jpg"
 import image3 from "./Images/IMG_20180214_105555_edit.jpg"
+import image4 from "./Images/IMG_20180214_111721_edit_edit1.jpg"
 
 let TableauxArray1 = [
     { image: image3, title: 'title1', description: 'description1' },
     { image: image2, title: 'title2', description: 'description1' },
     { image: image1, title: 'title1', description: 'description1' },
-    { image: image0, title: 'title1', description: 'description1' },
+    { image: image4, title: 'title1', description: 'description1' },
     { image: image3, title: 'title1', description: 'description1' },
     { image: image2, title: 'title1', description: 'description1' }
 ]
 let TableauxArray2 = [
     { image: image2, title: 'title1', description: 'description1' },
     { image: image2, title: 'title1', description: 'description1' },
-    { image: image2, title: 'title1', description: 'description1' },
+    { image: image4, title: 'title1', description: 'description1' },
     { image: image0, title: 'title1', description: 'description1' },
     { image: image3, title: 'title1', description: 'description1' },
     { image: image2, title: 'title1', description: 'description1' }
@@ -104,8 +105,7 @@ class Tableaux extends Component {
             <Fragment>
                 <div id="tableaux-container">
                     <div className="tableaux-presentation-container">
-                        <div className="close-the-tableaux"
-                            onClick={this.handelClose}
+                        <div className="close-the-tableaux" onClick={this.handelClose}
                         >
                         </div>
                         <div className="the-tableaux">
@@ -129,7 +129,6 @@ class Tableaux extends Component {
                             {this.state.AllTableauxInRow3}
                         </div>
                     </div>
-
                 </div>
             </Fragment>
         )
