@@ -8,6 +8,26 @@ import Atelier from "./Atelier"
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.activeNavigation = this.activeNavigation.bind(this)
+
+
+  }
+
+  async activeNavigation(e) {
+    let target = e.target;
+    let allLi = await document.querySelectorAll('.navigation ul li a');
+    await allLi.forEach(element => {
+      if (element != target) {
+        element.style.opacity = ".3"
+      }
+    });
+
+    target.style.opacity = "1"
+  }
+
   render() {
     return (
       <Fragment>
@@ -16,23 +36,21 @@ class App extends Component {
           <header >
             <nav className="navigation">
               <ul>
-
-                <li>
+                <li className="acceuil-link" onClick={this.activeNavigation}>
                   <Link to="/Acceuil">Acceuil</Link>
                 </li>
 
-                <li>
+                <li onClick={this.activeNavigation}>
                   <Link to="/Biographie">Biographie</Link>
                 </li>
 
-                <li>
+                <li onClick={this.activeNavigation}>
                   <Link to="/Tableaux">Tableaux</Link>
                 </li>
 
-                <li>
+                <li onClick={this.activeNavigation}>
                   <Link to="/Atelier">Atelier</Link>
                 </li>
-
               </ul>
             </nav>
           </header>

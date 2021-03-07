@@ -1,35 +1,6 @@
 import React, { Component, Fragment } from "react"
 
-import image0 from "./Images/1590098684498-2042443623[21808].jpg"
-import image1 from "./Images/eE4cYLEA.jpeg"
-import image2 from "./Images/IMG_20180214_105003_edit.jpg"
-import image3 from "./Images/IMG_20180214_105555_edit.jpg"
-import image4 from "./Images/IMG_20180214_111721_edit_edit1.jpg"
-
-let TableauxArray1 = [
-    { image: image3, title: 'title1', description: 'description1' },
-    { image: image2, title: 'title2', description: 'description1' },
-    { image: image1, title: 'title1', description: 'description1' },
-    { image: image4, title: 'title1', description: 'description1' },
-    { image: image3, title: 'title1', description: 'description1' },
-    { image: image2, title: 'title1', description: 'description1' }
-]
-let TableauxArray2 = [
-    { image: image2, title: 'title1', description: 'description1' },
-    { image: image2, title: 'title1', description: 'description1' },
-    { image: image4, title: 'title1', description: 'description1' },
-    { image: image0, title: 'title1', description: 'description1' },
-    { image: image3, title: 'title1', description: 'description1' },
-    { image: image2, title: 'title1', description: 'description1' }
-]
-let TableauxArray3 = [
-    { image: image1, title: 'title1', description: 'description1' },
-    { image: image2, title: 'title1', description: 'description1' },
-    { image: image2, title: 'title1', description: 'description1' },
-    { image: image0, title: 'title1', description: 'description1' },
-    { image: image3, title: 'title1', description: 'description1' },
-    { image: image2, title: 'title1', description: 'description1' }
-]
+import { TableauxArray1, TableauxArray2, TableauxArray3 } from "./ImagesContainer"
 
 class Tableaux extends Component {
 
@@ -51,7 +22,6 @@ class Tableaux extends Component {
         let ArrayContainer1 = [];
         let ArrayContainer2 = [];
         let ArrayContainer3 = [];
-
         TableauxArray1.map((tableau) => {
             ArrayContainer1.push(<OneTableaux
                 onSowOneTableau={this.sowOneTableau}
@@ -98,6 +68,7 @@ class Tableaux extends Component {
             TheTitleToShow: childData.Title
         })
         document.querySelector(".tableaux-presentation-container").style.display = "flex";
+        document.querySelector(".the-tableaux").scrollTop = 0;
     }
 
     render() {
@@ -108,7 +79,7 @@ class Tableaux extends Component {
                         <div className="close-the-tableaux" onClick={this.handelClose}
                         >
                         </div>
-                        <div className="the-tableaux">
+                        <div onScroll={(e) => console.log(e.target.scrollTop)} className="the-tableaux">
                             <h2> {this.state.TheTitleToShow}</h2>
                             <img src={this.state.TheTableauxToShow} />
                             <div className="the-tableaux-description">
@@ -168,4 +139,4 @@ class OneTableaux extends Component {
 
 
 
-export default Tableaux 
+export default Tableaux
