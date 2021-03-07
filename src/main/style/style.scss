@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  src: url(./moderna/MODERNA_.TTF);
-  font-family: moderna;
+  src: url(./RocknRoll_One/RocknRollOne-Regular.ttf);
+  font-family: RocknRollOne;
 }
 
 *,
@@ -26,7 +26,7 @@ body {
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background: var(--colorX);
   color: var(--color0);
-  font-family: "moderna";
+  font-family: "RocknRollOne";
 }
 
 .navigation {

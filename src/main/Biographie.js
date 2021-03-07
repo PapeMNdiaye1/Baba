@@ -12,17 +12,9 @@ class Biographie extends Component {
                                 Biographie
                             </h1>
                             <section>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
-                                recusandae alias cumque in doloremque accusamus voluptates iure.
-                                Voluptas iure nesciunt distinctio nemo iste recusandae, error laudantium.
-                                Repellat, et! Debitis, qui! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
-                                recusandae alias cumque in doloremque accusamus voluptates iure.
-                                Voluptas iure nesciunt distinctio nemo iste recusandae, error laudantium.
-                                Repellat, et! Debitis, qui!
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
-                                recusandae alias cumque in doloremque accusamus voluptates iure.
-                                Voluptas iure nesciunt distinctio nemo iste recusandae, error laudantium.
-                                Repellat, et! Debitis, qui!
+                                Artiste plasticien en atelier de peinture depuis quatre années. Mon intérêt plastique est ce qui nous est proche, notre environnement, notre cadre et nos relations.
+                                J'ai un baccalauréat en 2003, et depuis je poursuis ma recherche artistique dans différents domaines aussi variés que l'art figuratif et l'art abstrait.
+
                             </section>
                         </div>
                     </div>
