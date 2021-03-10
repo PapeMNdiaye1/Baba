@@ -18,7 +18,7 @@
     min-height: 50em;
     background: url("../Images/acceuil-bacground.svg");
     background-size: 215%;
-    background-position: -70em -34em;
+    background-position: -115vh -35vw;
     background-repeat: no-repeat;
   }
   .text-in-acceuil-background,
@@ -59,6 +59,13 @@
       // .twitter{
       //     // background: url('../Images/twitter.svg');
       //  }
+    }
+    .social-networks-link{
+      a{
+        cursor: pointer;
+        color: var(--color0);
+        text-decoration: none;
+      }
     }
   }
 }

@@ -71,6 +71,11 @@ body {
 .navigation ul li a {
   color: var(--color0);
   text-decoration: none;
+  opacity: .3;
+}
+
+.navigation ul .acceuil-link a {
+  opacity: 1;
 }
 
 #acceuil-container {
@@ -94,7 +99,7 @@ body {
   min-height: 50em;
   background: url("../Images/acceuil-bacground.svg");
   background-size: 215%;
-  background-position: -70em -34em;
+  background-position: -115vh -35vw;
   background-repeat: no-repeat;
 }
 
@@ -175,6 +180,12 @@ body {
   font-size: 2em;
 }
 
+#acceuil-container .social-networks-container .social-networks-link a {
+  cursor: pointer;
+  color: var(--color0);
+  text-decoration: none;
+}
+
 #biographie-container {
   margin-top: 3em;
   width: 100%;
@@ -209,25 +220,45 @@ body {
 
 #biographie-container .carte-container {
   width: 100%;
-  border-top: 0.01em var(--color0) solid;
   margin-top: 2em;
   padding-bottom: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#biographie-container .carte-container::after {
+  position: absolute;
+  content: "";
+  bottom: -14%;
+  margin: auto;
+  width: 90vw;
+  height: 0.03em;
+  background: var(--color0);
 }
 
 #biographie-container .carte-container .carte {
   margin: auto;
-  width: 40em;
+  width: 50em;
 }
 
 #biographie-container .carte-container .carte h1 {
   font-weight: 100;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 #biographie-container .carte-container .carte section {
   border: 0.01em var(--color0) solid;
   padding: 2em;
-  font-size: .8em;
+  font-size: 0.8em;
+  line-break: auto;
+  word-break: break-all;
 }
 
 #tableaux-container {
@@ -470,6 +501,7 @@ body {
   width: 100%;
   height: 14em;
   margin-top: 2em;
+  margin-bottom: 2em;
   padding-left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,6 +512,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#atelier .works::after {
+  position: absolute;
+  content: "";
+  bottom: -14%;
+  margin: auto;
+  width: 50em;
+  height: 0.03em;
+  background: var(--color0);
 }
 
 #atelier .works .works-poster {
@@ -516,6 +558,10 @@ body {
           align-items: center;
 }
 
+#atelier .works .travaux-annexes {
+  background-image: url("../Images/IMG_20180214_104817_edit.jpg");
+}
+
 #atelier .works .works-description-container {
   max-width: calc(100%-70em);
   height: 100%;
@@ -524,23 +570,28 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #atelier .works .works-description-container .works-description {
   width: 100%;
-}
-
-#atelier .works .works-description-container .works-description p {
   max-width: 70em;
 }
 
-#atelier .works .works-description-container .see-more {
-  padding: 0.3em;
-  border: 0.1em var(--color0) solid;
+#atelier h2 {
+  margin-top: 4em;
+}
+
+#atelier .contact-container {
+  width: 100%;
+  height: 20em;
+  background: salmon;
 }
 /*# sourceMappingURL=style.css.map */

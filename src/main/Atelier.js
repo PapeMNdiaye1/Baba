@@ -6,36 +6,62 @@ class Atelier extends Component {
             <Fragment>
                 <div id="atelier">
                     <div className="works">
+                        <div className="works-poster travaux-annexes">
+                            <h1>
+                                Travaux annexes
+                            </h1>
+                        </div>
+                        <div className="works-description-container">
+                            <p className="works-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Enim labore odio vero animi, commodi neque eum atque
+                                lore molestias maxime possimus
+                                impedit, consequuntur, sequi vitae.
+                                impedit, consequuntur, sequi vitae.
+                                impedit, consequuntur, sequi vitae.
+                                impedit, consequuntur, sequi vitae.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="works">
+                        <div className="works-poster portraits-et-autres">
+                            <h1>
+                                Portraits et autres
+                            </h1>
+                        </div>
+                        <div className="works-description-container">
+                            <p className="works-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Enim labore odio vero animi, commodi neque eum atque
+                                lore molestias maxime possimus
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="works">
                         <div className="works-poster">
                             <h1>
                                 works-poster
                             </h1>
                         </div>
                         <div className="works-description-container">
-                            <div className="works-description">
-                                <p >
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Enim labore odio vero animi, commodi neque eum atque
-                                    lore molestias maxime possimus
-                                    impedit, consequuntur, sequi vitae.
-                                    impedit, consequuntur, sequi vitae.
-                                    impedit, consequuntur, sequi vitae.
-                                    impedit, consequuntur, sequi vitae.
+                            <p className="works-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Enim labore odio vero animi, commodi neque eum atque
+                                lore molestias maxime possimus
+                                impedit, consequuntur, sequi vitae.
+                                impedit, consequuntur, sequi vitae.
+                                impedit, consequuntur, sequi vitae.
+                                impedit, consequuntur, sequi vitae.
                             </p>
-                            </div>
-                            <div className="see-more">
-                                Voir Plus
-                            </div>
+
                         </div>
                     </div>
-                    <div className="works">
-                    </div>
-                    <div className="works">
-                    </div>
+
                     <h2>Contact</h2>
                     <br />
-                    <div >
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus neque natus culpa enim totam ipsa ad magnam laudantium magni esse fugit, quibusdam necessitatibus incidunt saepe, officia dolorem aliquam nemo doloremque!
+                    <div className="contact-container">
+
                     </div>
                 </div>
             </Fragment>

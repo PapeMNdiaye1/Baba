@@ -55,6 +55,12 @@ body {
       a {
         color: var(--color0);
         text-decoration: none;
+        opacity: .3;
+      }
+    }
+    .acceuil-link{
+      a {
+        opacity: 1;
       }
     }
   }

@@ -68,6 +68,7 @@ class Tableaux extends Component {
             TheTitleToShow: childData.Title
         })
         document.querySelector(".tableaux-presentation-container").style.display = "flex";
+        document.querySelector(".the-tableaux").scrollTop = 0;
     }
 
     render() {
@@ -78,7 +79,7 @@ class Tableaux extends Component {
                         <div className="close-the-tableaux" onClick={this.handelClose}
                         >
                         </div>
-                        <div className="the-tableaux">
+                        <div onScroll={(e) => console.log(e.target.scrollTop)} className="the-tableaux">
                             <h2> {this.state.TheTitleToShow}</h2>
                             <img src={this.state.TheTableauxToShow} />
                             <div className="the-tableaux-description">
@@ -138,4 +139,4 @@ class OneTableaux extends Component {
 
 
 
-export default Tableaux 
+export default Tableaux

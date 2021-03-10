@@ -24,11 +24,28 @@ class Biographie extends Component {
                                 C.V
                             </h1>
                             <section>
+                                2003 : Bacalauriat
+                                    <br />
+                                <br />
+                                <br />
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita officia in quaerat, consequuntur sunt ullam quidem odit optio nobis quas iusto iste eveniet aliquid libero enim saepe, sed accusamus.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita officia in quaerat, consequuntur sunt ullam quidem odit optio nobis quas iusto iste eveniet aliquid libero enim saepe, sed accusamus.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita officia in quaerat, consequuntur sunt ullam quidem odit optio nobis quas iusto iste eveniet aliquid libero enim saepe, sed accusamus.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita officia in quaerat, consequuntur sunt ullam quidem odit optio nobis quas iusto iste eveniet aliquid libero enim saepe, sed accusamus.
+                                2005 : Professeur a ENA
+                                    <br />
+                                <br />
+                                <br />
+                                2010 - 2014 : Decoration
+                                    <br />
+                                <br />
+                                <br />
+                                2014 - 2016 : Atelier De Peinture
+                                    <br />
+                                <br />
+                                <br />
+                                2018 : Exposition OFF
+                                    <br />
+                                <br />
+                                <br />
+                                2018 - 2010 : Atelier De Peinture
                             </section>
                         </div>
                     </div>
