@@ -24,7 +24,6 @@ class App extends Component {
         element.style.opacity = ".3"
       }
     });
-
     target.style.opacity = "1"
   }
 
