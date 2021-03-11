@@ -92,12 +92,18 @@ class Tableaux extends Component {
                     <div className="tableaux-grid">
                         <div className="tableaux-rows">
                             {this.state.AllTableauxInRow1}
+                            <div className='tableaux-rows-bottom'>
+                            </div>
                         </div>
                         <div className="tableaux-rows">
                             {this.state.AllTableauxInRow2}
+                            <div className='tableaux-rows-bottom'>
+                            </div>
                         </div>
                         <div className="tableaux-rows">
                             {this.state.AllTableauxInRow3}
+                            <div className='tableaux-rows-bottom'>
+                            </div>
                         </div>
                     </div>
                 </div>

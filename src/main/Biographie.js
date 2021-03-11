@@ -24,25 +24,31 @@ class Biographie extends Component {
                                 C.V
                             </h1>
                             <section>
-
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita officia in quaerat, consequuntur sunt ullam quidem odit optio nobis quas iusto iste eveniet aliquid libero enim saepe, sed accusamus.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita officia in quaerat, consequuntur sunt ullam quidem odit optio nobis quas iusto iste eveniet aliquid libero enim saepe, sed accusamus.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita officia in quaerat, consequuntur sunt ullam quidem odit optio nobis quas iusto iste eveniet aliquid libero enim saepe, sed accusamus.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita officia in quaerat, consequuntur sunt ullam quidem odit optio nobis quas iusto iste eveniet aliquid libero enim saepe, sed accusamus.
+                                2018 - 2021 : Atelier De Peinture
+                                    <br />
+                                <br />
+                                <br />
+                                2018 : Exposition Sargal Bay
+                                    <br />
+                                <br />
+                                <br />
+                                2014 - 2016 : Atelier De Peinture
+                                    <br />
+                                <br />
+                                <br />
+                                2010 - 2014 : Decoration
+                                    <br />
+                                <br />
+                                <br />
+                                2005 : Professeur a ENA
+                                    <br />
+                                <br />
+                                <br />
+                                2003 : Bacalauriat
                             </section>
                         </div>
                     </div>
-                    <div className="carte-container">
-                        <div className="carte">
-                            <h1>
-                                Experience
-                            </h1>
-                            <section>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita officia in quaerat, consequuntur sunt ullam quidem odit optio nobis quas iusto iste eveniet aliquid libero enim saepe, sed accusamus.
 
-                            </section>
-                        </div>
-                    </div>
                 </div>
 
             </Fragment>
@@ -53,4 +59,4 @@ class Biographie extends Component {
 
 
 
-export default Biographie 
+export default Biographie

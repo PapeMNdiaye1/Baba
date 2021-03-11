@@ -34,21 +34,21 @@
     padding-left: 5%;
     @include cent();
 
-    &::after{
+    &::after {
       position: absolute;
-      content:'';
+      content: "";
       bottom: -14%;
-      margin: auto;
-      width: 50em;
-      height: .03em;
-      background: var(--color0  );
+      left: 25vw;
+      width: 50vw;
+      height: 0.03em;
+      background: var(--color0);
     }
     .works-poster {
       width: 25em;
       height: 100%;
-      background: seagreen;
-      background-image: url("../Images/1590098684498-2042443623[21808].jpg");
-      background-size: 100%;
+      // background: seagreen;
+      background-image: url("../Images/\'\'Dieu\ propose\,\ l\'homme\ dispose\'\'\,\ Acrylique\ sur\ toile\,\ 160x100cm\,\ année\ 2016-2018.jpg");
+      background-size: 120%;
       background-position: center;
       background-repeat: no-repeat;
       @include cent();
@@ -59,8 +59,11 @@
         @include cent();
       }
     }
-    .travaux-annexes{
+    .travaux-annexes {
       background-image: url("../Images/IMG_20180214_104817_edit.jpg");
+    }
+    .portraits-et-autres{
+      background-image: url("../Images/IMG_20201004_143847_736_1601822513604_1601822597665.jpg");
 
     }
     .works-description-container {
@@ -74,16 +77,50 @@
         width: 100%;
         max-width: 70em;
         // background: salmon;
+        display: none;
+      }
+    }
+  }
+  h2 {
+    margin-top: 4em;
+    width: 100%;
+    text-align: center;
+ 
+  }
+  .contact-container {
+    // left;
+    width: auto;
+    height: auto;
+    // background: salmon;
+    display: grid;
+    grid-template-columns: repeat(2 , auto);
+    grid-template-rows: repeat(2 , auto);
+    margin-top: 2em;
+    .social-networks {
+      @include cent();
+      justify-content: flex-start;
+      .social-networks-icons {
+        width: 2em;
+        height: 2em;
+        //  background-color: aqua;
+        @include cent();
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 2em;
+        color: var(--colorXX);
+      }
+      // .twitter{
+        //     // background: url('../Images/twitter.svg');
+        //  }
+      }
+      .social-networks-link{
+        a{
+        cursor: pointer;
+        color: var(--color0);
+        text-decoration: none;
       }
     }
 
-  }
-  h2{
-    margin-top: 4em;
-  }
-  .contact-container{
-    width: 100%;
-    height: 20em;
-    background: salmon;
   }
 }

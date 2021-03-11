@@ -6,6 +6,8 @@ class Acceuil extends Component {
             <Fragment>
                 <div id="acceuil-container">
                     <div className="background-container">
+                        <h1>Baba Sy</h1>
+                        <h2>Artiste plasticien</h2>
                     </div>
                     <div className="text-in-acceuil-background">
                     </div>

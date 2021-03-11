@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url(./RocknRoll_One/RocknRollOne-Regular.ttf);
   font-family: RocknRollOne;
@@ -16,6 +17,7 @@
 
 body {
   --colorX: #262626;
+  --colorXXX: #8C0D0D;
   --colorXX: #1a1a1a;
   --color0: #f2d6bd;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -79,8 +81,9 @@ body {
 }
 
 #acceuil-container {
+  margin-top: 3em;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 3em);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -97,10 +100,25 @@ body {
   grid-row: 1/4;
   min-width: 50em;
   min-height: 50em;
+  background-color: aqua;
   background: url("../Images/acceuil-bacground.svg");
   background-size: 215%;
-  background-position: -115vh -35vw;
+  background-position: -65vw -45vh;
   background-repeat: no-repeat;
+}
+
+#acceuil-container .background-container h1 {
+  margin-top: 4vh;
+  font-size: 8em;
+  text-align: start;
+  margin-left: 4vw;
+}
+
+#acceuil-container .background-container h2 {
+  margin-left: 4vw;
+  top: -1em;
+  font-size: 2em;
+  text-align: start;
 }
 
 #acceuil-container .text-in-acceuil-background,
@@ -178,6 +196,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   font-size: 2em;
+  color: var(--colorXX);
 }
 
 #acceuil-container .social-networks-container .social-networks-link a {
@@ -220,25 +239,45 @@ body {
 
 #biographie-container .carte-container {
   width: 100%;
-  border-top: 0.01em var(--color0) solid;
   margin-top: 2em;
   padding-bottom: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#biographie-container .carte-container::after {
+  position: absolute;
+  content: "";
+  bottom: -14%;
+  margin: auto;
+  width: 90vw;
+  height: 0.03em;
+  background: var(--color0);
 }
 
 #biographie-container .carte-container .carte {
   margin: auto;
-  width: 40em;
+  width: 50em;
 }
 
 #biographie-container .carte-container .carte h1 {
   font-weight: 100;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 #biographie-container .carte-container .carte section {
   border: 0.01em var(--color0) solid;
   padding: 2em;
-  font-size: .8em;
+  font-size: 0.8em;
+  line-break: auto;
+  word-break: break-all;
 }
 
 #tableaux-container {
@@ -269,7 +308,6 @@ body {
       grid-template-rows: auto;
   grid-column-gap: 1em;
   overflow-y: scroll;
-  padding-top: 4em;
   /* Track */
   /* Handle */
 }
@@ -293,6 +331,11 @@ body {
 #tableaux-container .tableaux-grid .tableaux-rows {
   min-height: 100%;
   height: auto;
+}
+
+#tableaux-container .tableaux-grid .tableaux-rows .tableaux-rows-bottom {
+  height: 10em;
+  width: 100%;
 }
 
 #tableaux-container .tableaux-grid .tableaux-rows .tableaux-container {
@@ -339,8 +382,8 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 90%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 10;
   display: none;
@@ -349,8 +392,8 @@ body {
 #tableaux-container .tableaux-presentation-container .the-tableaux {
   width: 100%;
   height: 100%;
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,7 +432,7 @@ body {
 }
 
 #tableaux-container .tableaux-presentation-container .the-tableaux img {
-  height: calc(100vh / 1.2);
+  height: calc(100vh / 1.3);
   border: 0.2em var(--color0) solid;
 }
 
@@ -413,6 +456,7 @@ body {
   font-size: .7em;
   padding: 1em;
   width: 50%;
+  text-align: center;
 }
 
 #tableaux-container .tableaux-presentation-container .close-the-tableaux {
@@ -496,20 +540,19 @@ body {
 
 #atelier .works::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -14%;
-  margin: auto;
-  width: 50em;
-  height: .03em;
+  left: 25vw;
+  width: 50vw;
+  height: 0.03em;
   background: var(--color0);
 }
 
 #atelier .works .works-poster {
   width: 25em;
   height: 100%;
-  background: seagreen;
-  background-image: url("../Images/1590098684498-2042443623[21808].jpg");
-  background-size: 100%;
+  background-image: url("../Images/''Dieu propose, l'homme dispose'', Acrylique sur toile, 160x100cm, année 2016-2018.jpg");
+  background-size: 120%;
   background-position: center;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -542,6 +585,10 @@ body {
   background-image: url("../Images/IMG_20180214_104817_edit.jpg");
 }
 
+#atelier .works .portraits-et-autres {
+  background-image: url("../Images/IMG_20201004_143847_736_1601822513604_1601822597665.jpg");
+}
+
 #atelier .works .works-description-container {
   max-width: calc(100%-70em);
   height: 100%;
@@ -563,15 +610,64 @@ body {
 #atelier .works .works-description-container .works-description {
   width: 100%;
   max-width: 70em;
+  display: none;
 }
 
 #atelier h2 {
   margin-top: 4em;
+  width: 100%;
+  text-align: center;
 }
 
 #atelier .contact-container {
-  width: 100%;
-  height: 20em;
-  background: salmon;
+  width: auto;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  margin-top: 2em;
+}
+
+#atelier .contact-container .social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#atelier .contact-container .social-networks .social-networks-icons {
+  width: 2em;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 2em;
+  color: var(--colorXX);
+}
+
+#atelier .contact-container .social-networks-link a {
+  cursor: pointer;
+  color: var(--color0);
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
